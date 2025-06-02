@@ -1,0 +1,1 @@
+index=suricata event_type=alert | stats count by src_ip

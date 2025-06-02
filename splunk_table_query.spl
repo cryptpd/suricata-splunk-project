@@ -1,0 +1,1 @@
+index=suricata event_type=alert | table _time, src_ip, dest_ip, alert.signature
