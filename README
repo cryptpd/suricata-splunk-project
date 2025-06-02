@@ -18,9 +18,9 @@
  5. Simulate traffic with `nmap <kali_ip>`.
 
  ## Screenshots
- - `screenshots/suricata_eve_json.png`: Suricata alerts.
- - `screenshots/splunk_search_results.png`: Splunk search table.
- - `screenshots/splunk_network_threats_dashboard.png`: Splunk dashboard.
+    Suricata alerts.
+    Splunk search table.
+    Splunk dashboard.
 
  ## Requirements
  - Kali Linux (VM recommended).
