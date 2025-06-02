@@ -1,0 +1,32 @@
+## Overview
+ A beginner-friendly cybersecurity project that uses *Suricata* on Kali Linux to detect network threats and *Splunk* to analyze and visualize logs. The project includes setting up Suricata, ingesting logs into Splunk, and creating a dashboard to display alerts.
+
+ ## Repository Contents
+ - `suricata.yaml`: Sample Suricata configuration.
+ - `eve_sample.json`: Sanitized Suricata log sample.
+ - `splunk_table_query.spl`: Splunk query for alert table.
+ - `splunk_bar_chart_query.spl`: Splunk query for bar chart.
+ - `network_threats_dashboard.xml`: Splunk dashboard XML.
+ - `screenshots/`: Images of logs, search results, and dashboard.
+ - `report.pdf`: Project report with setup and results.
+
+ ## Setup Instructions
+ 1. Install Suricata: `sudo apt install suricata -y && sudo suricata-update`.
+ 2. Configure Suricata in `suricata.yaml` and run: `sudo suricata -c /etc/suricata/suricata.yaml -i eth0 -D`.
+ 3. Install Splunk and monitor `/var/log/suricata/eve.json`.
+ 4. Import `network_threats_dashboard.xml` into Splunk.
+ 5. Simulate traffic with `nmap <kali_ip>`.
+
+ ## Screenshots
+ - `screenshots/suricata_eve_json.png`: Suricata alerts.
+ - `screenshots/splunk_search_results.png`: Splunk search table.
+ - `screenshots/splunk_network_threats_dashboard.png`: Splunk dashboard.
+
+ ## Requirements
+ - Kali Linux (VM recommended).
+ - Suricata and Splunk Enterprise (free trial).
+ - Isolated network for testing.
+
+ ## Notes
+ - All sensitive data (e.g., IPs) has been sanitized.
+ - Run in a safe, isolated environment.
